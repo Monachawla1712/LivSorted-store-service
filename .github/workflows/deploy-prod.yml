@@ -54,14 +54,14 @@ jobs:
             echo "Build Failed !!!!!"
             exit 1;        
           fi
-      - name: Request auth-prod deployment approval
-        uses: trstringer/manual-approval@v1.8.0
-        timeout-minutes: 5
-        with:
-          approvers: ${{ secrets.APPROVERS }}
-          secret: ${{ github.TOKEN }}
-          minimum-approvals: 1
-          exclude-workflow-initiator-as-approver: false
+      # - name: Request store-prod deployment approval
+      #   uses: trstringer/manual-approval@v1.8.0
+      #   timeout-minutes: 5
+      #   with:
+      #     approvers: ${{ secrets.APPROVERS }}
+      #     secret: ${{ github.TOKEN }}
+      #     minimum-approvals: 1
+      #     exclude-workflow-initiator-as-approver: false
 
       - name: Code Deploy
         run: |
