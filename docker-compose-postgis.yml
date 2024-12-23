@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  psql:
+    image: postgis/postgis
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - /tmp/data:/var/lib/postgresql/data

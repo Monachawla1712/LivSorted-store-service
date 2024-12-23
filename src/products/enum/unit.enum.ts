@@ -1,0 +1,10 @@
+export enum Unit {
+  GRAM = 'GRAM',
+  NUMBER = 'NUMBER',
+  KILOGRAM = 'KILOGRAM',
+  PACKET = 'PACKET',
+  BUNDLE = 'BUNDLE',
+  BOX = 'BOX',
+  LITER = 'LITER',
+  MILLILITER = 'MILLILITER',
+}

@@ -1,0 +1,6 @@
+export enum LabelPricingType {
+    FORECASTED_PRICE = "FORECASTED_PRICE",
+    MAXIMUM_PRICE = "MAXIMUM_PRICE",
+    FIXED_PRICE = "FIXED_PRICE",
+}
+
